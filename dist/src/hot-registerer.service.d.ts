@@ -1,4 +1,4 @@
-import Handsontable from 'handsontable';
+import * as Handsontable from 'handsontable';
 export declare class HotRegisterer {
     getInstance(id: string): Handsontable;
     registerInstance(id: string, instance: Handsontable): void;

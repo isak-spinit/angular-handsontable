@@ -1,4 +1,9 @@
-import { Injectable } from '@angular/core';
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+import { Injectable } from "@angular/core";
+import * as Handsontable from "handsontable";
 var /** @type {?} */ instances = new Map();
 var HotRegisterer = /** @class */ (function () {
     function HotRegisterer() {
@@ -7,7 +12,11 @@ var HotRegisterer = /** @class */ (function () {
      * @param {?} id
      * @return {?}
      */
-    HotRegisterer.prototype.getInstance = function (id) {
+    HotRegisterer.prototype.getInstance = /**
+     * @param {?} id
+     * @return {?}
+     */
+    function (id) {
         return instances.get(id);
     };
     /**
@@ -15,32 +24,34 @@ var HotRegisterer = /** @class */ (function () {
      * @param {?} instance
      * @return {?}
      */
-    HotRegisterer.prototype.registerInstance = function (id, instance) {
+    HotRegisterer.prototype.registerInstance = /**
+     * @param {?} id
+     * @param {?} instance
+     * @return {?}
+     */
+    function (id, instance) {
         instances.set(id, instance);
     };
     /**
      * @param {?} id
      * @return {?}
      */
-    HotRegisterer.prototype.removeInstance = function (id) {
+    HotRegisterer.prototype.removeInstance = /**
+     * @param {?} id
+     * @return {?}
+     */
+    function (id) {
         instances.delete(id);
     };
-    HotRegisterer.decorators = [
-        { type: Injectable },
-    ];
-    /**
-     * @nocollapse
-     */
-    HotRegisterer.ctorParameters = function () { return []; };
     return HotRegisterer;
 }());
 export { HotRegisterer };
 function HotRegisterer_tsickle_Closure_declarations() {
-    /** @type {?} */
+    /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
     HotRegisterer.decorators;
     /**
      * @nocollapse
-     * @type {?}
+     * @type {function(): !Array<(null|{type: ?, decorators: (undefined|!Array<{type: !Function, args: (undefined|!Array<?>)}>)})>}
      */
     HotRegisterer.ctorParameters;
 }

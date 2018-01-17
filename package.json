@@ -43,7 +43,7 @@
     "@angular/core": "^2.4.7 || ^4.0.0"
   },
   "dependencies": {
-    "handsontable": "0.35.0"
+    "handsontable": "https://github.com/isak-spinit/handsontable/tarball/master"
   },
   "devDependencies": {
     "@angular/common": "5.0.1",

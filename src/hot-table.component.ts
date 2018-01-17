@@ -12,7 +12,7 @@ import {
   SimpleChanges,
   ViewEncapsulation,
 } from '@angular/core';
-import Handsontable from 'handsontable';
+import * as Handsontable from 'handsontable';
 
 import { HotRegisterer } from './hot-registerer.service';
 import { HotHelper } from './hot-settings.utils';
@@ -327,7 +327,7 @@ export class HotTableComponent implements AfterContentInit, OnChanges, OnDestroy
     }
 
     let newOptions = this._hotHelper.prepareChanges(changes);
-    
+
     this.updateHotTable(newOptions);
   }
 
