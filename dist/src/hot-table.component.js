@@ -3,7 +3,7 @@
  * @suppress {checkTypes} checked by tsc
  */
 import { Component, ElementRef, EventEmitter, Input, NgZone, AfterContentInit, OnChanges, OnDestroy, OnInit, Output, SimpleChanges, ViewEncapsulation, } from "@angular/core";
-import * as Handsontable from "handsontable";
+import Handsontable from "handsontable";
 import { HotRegisterer } from "./hot-registerer.service";
 import { HotHelper } from "./hot-settings.utils";
 import { HotColumnComponent } from "./hot-column.component";

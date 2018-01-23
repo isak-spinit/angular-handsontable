@@ -3,7 +3,7 @@
  * @suppress {checkTypes} checked by tsc
  */
 import { Injectable } from "@angular/core";
-import * as Handsontable from "handsontable";
+import Handsontable from "handsontable";
 var /** @type {?} */ instances = new Map();
 var HotRegisterer = /** @class */ (function () {
     function HotRegisterer() {

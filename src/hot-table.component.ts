@@ -12,7 +12,7 @@ import {
   SimpleChanges,
   ViewEncapsulation,
 } from '@angular/core';
-import * as Handsontable from 'handsontable';
+import Handsontable from 'handsontable';
 
 import { HotRegisterer } from './hot-registerer.service';
 import { HotHelper } from './hot-settings.utils';
