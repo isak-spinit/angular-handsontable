@@ -1,21 +1,18 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-import { Component, Input, Injector, OnChanges, SimpleChanges, } from "@angular/core";
-import { HotTableComponent } from "./hot-table.component";
+import { Component, Input, Injector, } from '@angular/core';
+import { HotTableComponent } from './hot-table.component';
 var HotColumnComponent = /** @class */ (function () {
+    /**
+     * @param {?} inj
+     */
     function HotColumnComponent(inj) {
         this.inj = inj;
+        this.firstRun = true;
         this.parentComponent = this.inj.get(HotTableComponent);
     }
     /**
      * @return {?}
      */
-    HotColumnComponent.prototype.ngOnInit = /**
-     * @return {?}
-     */
-    function () {
+    HotColumnComponent.prototype.ngOnInit = function () {
         this.firstRun = false;
         this.parentComponent.addColumn(this);
     };
@@ -23,11 +20,7 @@ var HotColumnComponent = /** @class */ (function () {
      * @param {?} changes
      * @return {?}
      */
-    HotColumnComponent.prototype.ngOnChanges = /**
-     * @param {?} changes
-     * @return {?}
-     */
-    function (changes) {
+    HotColumnComponent.prototype.ngOnChanges = function (changes) {
         if (this.firstRun) {
             return;
         }
@@ -36,24 +29,154 @@ var HotColumnComponent = /** @class */ (function () {
     /**
      * @return {?}
      */
-    HotColumnComponent.prototype.ngOnDestroy = /**
-     * @return {?}
-     */
-    function () {
+    HotColumnComponent.prototype.ngOnDestroy = function () {
         this.parentComponent.removeColumn(this);
+    };
+    HotColumnComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'hot-column',
+                    template: "",
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    HotColumnComponent.ctorParameters = function () { return [
+        { type: Injector, },
+    ]; };
+    HotColumnComponent.propDecorators = {
+        'allowHtml': [{ type: Input },],
+        'allowInsertColumn': [{ type: Input },],
+        'allowInsertRow': [{ type: Input },],
+        'allowInvalid': [{ type: Input },],
+        'allowRemoveColumn': [{ type: Input },],
+        'allowRemoveRow': [{ type: Input },],
+        'autoColumnSize': [{ type: Input },],
+        'autoComplete': [{ type: Input },],
+        'autoRowSize': [{ type: Input },],
+        'autoWrapCol': [{ type: Input },],
+        'autoWrapRow': [{ type: Input },],
+        'bindRowsWithHeaders': [{ type: Input },],
+        'cell': [{ type: Input },],
+        'cells': [{ type: Input },],
+        'checkedTemplate': [{ type: Input },],
+        'className': [{ type: Input },],
+        'colHeaders': [{ type: Input },],
+        'collapsibleColumns': [{ type: Input },],
+        'columnHeaderHeight': [{ type: Input },],
+        'columns': [{ type: Input },],
+        'columnSorting': [{ type: Input },],
+        'columnSummary': [{ type: Input },],
+        'colWidths': [{ type: Input },],
+        'commentedCellClassName': [{ type: Input },],
+        'comments': [{ type: Input },],
+        'contextMenu': [{ type: Input },],
+        'copyable': [{ type: Input },],
+        'copyColsLimit': [{ type: Input },],
+        'copyPaste': [{ type: Input },],
+        'copyRowsLimit': [{ type: Input },],
+        'correctFormat': [{ type: Input },],
+        'currentColClassName': [{ type: Input },],
+        'currentHeaderClassName': [{ type: Input },],
+        'currentRowClassName': [{ type: Input },],
+        'customBorders': [{ type: Input },],
+        'data': [{ type: Input },],
+        'dataSchema': [{ type: Input },],
+        'dateFormat': [{ type: Input },],
+        'debug': [{ type: Input },],
+        'defaultDate': [{ type: Input },],
+        'disableVisualSelection': [{ type: Input },],
+        'dropdownMenu': [{ type: Input },],
+        'editor': [{ type: Input },],
+        'enterBeginsEditing': [{ type: Input },],
+        'enterMoves': [{ type: Input },],
+        'fillHandle': [{ type: Input },],
+        'filter': [{ type: Input },],
+        'filteringCaseSensitive': [{ type: Input },],
+        'filters': [{ type: Input },],
+        'fixedColumnsLeft': [{ type: Input },],
+        'fixedRowsBottom': [{ type: Input },],
+        'fixedRowsTop': [{ type: Input },],
+        'format': [{ type: Input },],
+        'formulas': [{ type: Input },],
+        'fragmentSelection': [{ type: Input },],
+        'ganttChart': [{ type: Input },],
+        'headerTooltips': [{ type: Input },],
+        'height': [{ type: Input },],
+        'hiddenColumns': [{ type: Input },],
+        'hiddenRows': [{ type: Input },],
+        'invalidCellClassName': [{ type: Input },],
+        'label': [{ type: Input },],
+        'language': [{ type: Input },],
+        'manualColumnFreeze': [{ type: Input },],
+        'manualColumnMove': [{ type: Input },],
+        'manualColumnResize': [{ type: Input },],
+        'manualRowMove': [{ type: Input },],
+        'manualRowResize': [{ type: Input },],
+        'maxCols': [{ type: Input },],
+        'maxRows': [{ type: Input },],
+        'mergeCells': [{ type: Input },],
+        'minCols': [{ type: Input },],
+        'minRows': [{ type: Input },],
+        'minSpareCols': [{ type: Input },],
+        'minSpareRows': [{ type: Input },],
+        'multiSelect': [{ type: Input },],
+        'nestedHeaders': [{ type: Input },],
+        'noWordWrapClassName': [{ type: Input },],
+        'observeChanges': [{ type: Input },],
+        'observeDOMVisibility': [{ type: Input },],
+        'outsideClickDeselects': [{ type: Input },],
+        'pasteMode': [{ type: Input },],
+        'persistentState': [{ type: Input },],
+        'placeholder': [{ type: Input },],
+        'placeholderCellClassName': [{ type: Input },],
+        'preventOverflow': [{ type: Input },],
+        'readOnly': [{ type: Input },],
+        'readOnlyCellClassName': [{ type: Input },],
+        'renderAllRows': [{ type: Input },],
+        'renderer': [{ type: Input },],
+        'rowHeaders': [{ type: Input },],
+        'rowHeaderWidth': [{ type: Input },],
+        'rowHeights': [{ type: Input },],
+        'search': [{ type: Input },],
+        'selectOptions': [{ type: Input },],
+        'skipColumnOnPaste': [{ type: Input },],
+        'sortByRelevance': [{ type: Input },],
+        'sortFunction': [{ type: Input },],
+        'sortIndicator': [{ type: Input },],
+        'source': [{ type: Input },],
+        'startCols': [{ type: Input },],
+        'startRows': [{ type: Input },],
+        'stretchH': [{ type: Input },],
+        'strict': [{ type: Input },],
+        'tableClassName': [{ type: Input },],
+        'tabMoves': [{ type: Input },],
+        'title': [{ type: Input },],
+        'trimDropdown': [{ type: Input },],
+        'trimRows': [{ type: Input },],
+        'trimWhitespace': [{ type: Input },],
+        'type': [{ type: Input },],
+        'uncheckedTemplate': [{ type: Input },],
+        'undo': [{ type: Input },],
+        'validator': [{ type: Input },],
+        'viewportColumnRenderingOffset': [{ type: Input },],
+        'viewportRowRenderingOffset': [{ type: Input },],
+        'visibleRows': [{ type: Input },],
+        'width': [{ type: Input },],
+        'wordWrap': [{ type: Input },],
     };
     return HotColumnComponent;
 }());
 export { HotColumnComponent };
 function HotColumnComponent_tsickle_Closure_declarations() {
-    /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
+    /** @type {?} */
     HotColumnComponent.decorators;
     /**
      * @nocollapse
-     * @type {function(): !Array<(null|{type: ?, decorators: (undefined|!Array<{type: !Function, args: (undefined|!Array<?>)}>)})>}
+     * @type {?}
      */
     HotColumnComponent.ctorParameters;
-    /** @type {!Object<string,!Array<{type: !Function, args: (undefined|!Array<?>)}>>} */
+    /** @type {?} */
     HotColumnComponent.propDecorators;
     /** @type {?} */
     HotColumnComponent.prototype.firstRun;

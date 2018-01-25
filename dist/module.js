@@ -1,35 +1,42 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-import { NgModule, ModuleWithProviders } from "@angular/core";
-import { HotTableComponent } from "./src/hot-table.component";
-import { HotColumnComponent } from "./src/hot-column.component";
-import { HotRegisterer } from "./src/hot-registerer.service";
+import { NgModule } from '@angular/core';
+import { HotTableComponent } from './src/hot-table.component';
+import { HotColumnComponent } from './src/hot-column.component';
+import { HotRegisterer } from './src/hot-registerer.service';
 var HotTableModule = /** @class */ (function () {
     function HotTableModule() {
     }
     /**
      * @return {?}
      */
-    HotTableModule.forRoot = /**
-     * @return {?}
-     */
-    function () {
+    HotTableModule.forRoot = function () {
         return {
             ngModule: HotTableModule,
             providers: [HotRegisterer]
         };
     };
+    HotTableModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [
+                        HotTableComponent,
+                        HotColumnComponent,
+                    ],
+                    exports: [HotTableComponent, HotColumnComponent],
+                    providers: [HotRegisterer],
+                },] },
+    ];
+    /**
+     * @nocollapse
+     */
+    HotTableModule.ctorParameters = function () { return []; };
     return HotTableModule;
 }());
 export { HotTableModule };
 function HotTableModule_tsickle_Closure_declarations() {
-    /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
+    /** @type {?} */
     HotTableModule.decorators;
     /**
      * @nocollapse
-     * @type {function(): !Array<(null|{type: ?, decorators: (undefined|!Array<{type: !Function, args: (undefined|!Array<?>)}>)})>}
+     * @type {?}
      */
     HotTableModule.ctorParameters;
 }

@@ -1,8 +1,4 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-import { Injectable, SimpleChanges } from "@angular/core";
+import { Injectable } from '@angular/core';
 var /** @type {?} */ AVAILABLE_OPTIONS = ['data', 'dataSchema', 'width', 'height', 'startRows', 'startCols',
     'rowHeaders', 'colHeaders', 'colWidths', 'rowHeights', 'columns', 'cells', 'cell', 'comments',
     'customBorders', 'minRows', 'minCols', 'maxRows', 'maxCols', 'minSpareRows', 'minSpareCols',
@@ -64,11 +60,7 @@ var HotHelper = /** @class */ (function () {
      * @param {?} component
      * @return {?}
      */
-    HotHelper.prototype.mergeSettings = /**
-     * @param {?} component
-     * @return {?}
-     */
-    function (component) {
+    HotHelper.prototype.mergeSettings = function (component) {
         var /** @type {?} */ mergedSettings = {};
         if (component['settings'] !== void 0) {
             Object.keys(component['settings']).forEach(function (key) {
@@ -106,11 +98,7 @@ var HotHelper = /** @class */ (function () {
      * @param {?} changes
      * @return {?}
      */
-    HotHelper.prototype.prepareChanges = /**
-     * @param {?} changes
-     * @return {?}
-     */
-    function (changes) {
+    HotHelper.prototype.prepareChanges = function (changes) {
         var /** @type {?} */ result = {};
         var /** @type {?} */ parameters = Object.keys(changes);
         parameters.forEach(function (param) {
@@ -120,15 +108,22 @@ var HotHelper = /** @class */ (function () {
         });
         return result;
     };
+    HotHelper.decorators = [
+        { type: Injectable },
+    ];
+    /**
+     * @nocollapse
+     */
+    HotHelper.ctorParameters = function () { return []; };
     return HotHelper;
 }());
 export { HotHelper };
 function HotHelper_tsickle_Closure_declarations() {
-    /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
+    /** @type {?} */
     HotHelper.decorators;
     /**
      * @nocollapse
-     * @type {function(): !Array<(null|{type: ?, decorators: (undefined|!Array<{type: !Function, args: (undefined|!Array<?>)}>)})>}
+     * @type {?}
      */
     HotHelper.ctorParameters;
 }

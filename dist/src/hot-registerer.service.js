@@ -1,9 +1,4 @@
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-import { Injectable } from "@angular/core";
-import Handsontable from "handsontable";
+import { Injectable } from '@angular/core';
 var /** @type {?} */ instances = new Map();
 var HotRegisterer = /** @class */ (function () {
     function HotRegisterer() {
@@ -12,11 +7,7 @@ var HotRegisterer = /** @class */ (function () {
      * @param {?} id
      * @return {?}
      */
-    HotRegisterer.prototype.getInstance = /**
-     * @param {?} id
-     * @return {?}
-     */
-    function (id) {
+    HotRegisterer.prototype.getInstance = function (id) {
         return instances.get(id);
     };
     /**
@@ -24,34 +15,32 @@ var HotRegisterer = /** @class */ (function () {
      * @param {?} instance
      * @return {?}
      */
-    HotRegisterer.prototype.registerInstance = /**
-     * @param {?} id
-     * @param {?} instance
-     * @return {?}
-     */
-    function (id, instance) {
+    HotRegisterer.prototype.registerInstance = function (id, instance) {
         instances.set(id, instance);
     };
     /**
      * @param {?} id
      * @return {?}
      */
-    HotRegisterer.prototype.removeInstance = /**
-     * @param {?} id
-     * @return {?}
-     */
-    function (id) {
+    HotRegisterer.prototype.removeInstance = function (id) {
         instances.delete(id);
     };
+    HotRegisterer.decorators = [
+        { type: Injectable },
+    ];
+    /**
+     * @nocollapse
+     */
+    HotRegisterer.ctorParameters = function () { return []; };
     return HotRegisterer;
 }());
 export { HotRegisterer };
 function HotRegisterer_tsickle_Closure_declarations() {
-    /** @type {!Array<{type: !Function, args: (undefined|!Array<?>)}>} */
+    /** @type {?} */
     HotRegisterer.decorators;
     /**
      * @nocollapse
-     * @type {function(): !Array<(null|{type: ?, decorators: (undefined|!Array<{type: !Function, args: (undefined|!Array<?>)}>)})>}
+     * @type {?}
      */
     HotRegisterer.ctorParameters;
 }

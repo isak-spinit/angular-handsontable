@@ -327,7 +327,7 @@ export class HotTableComponent implements AfterContentInit, OnChanges, OnDestroy
     }
 
     let newOptions = this._hotHelper.prepareChanges(changes);
-
+    
     this.updateHotTable(newOptions);
   }
 
